@@ -3,13 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {HttpClientModule} from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
+import { RegComponent } from './attendances/reg/reg.component';
+import { DisplayComponent } from './attendances/display/display.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RegComponent,
+    DisplayComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
