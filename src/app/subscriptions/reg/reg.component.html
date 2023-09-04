@@ -1,1 +1,77 @@
-<p>reg works!</p>
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    <input type="hidden" name="ID" [value]="objService.subscriptionData.SubscriptionId">
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-user-circle-o" aria-hidden="true" [class.green-icon]='objService.subscriptionData.SubscriptionId.valid'
+                    [class.red-icon]="objService.subscriptionData.SubscriptionId.invalid && objService.subscriptionData.SubscriptionId.touched"></i>
+                    <input name="SubscriptionId" #PaymentID="ngModel" [(ngModel)]="objService.subscriptionData.SubscriptionId" placeholder="Subscription ID" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-diamond" aria-hidden="true" [class.green-icon]='objService.subscriptionData.MemberId.valid'
+                    [class.red-icon]="objService.subscriptionData.MemberId.invalid && objService.subscriptionData.MemberId.touched"></i>
+                    <input name="MemberId" #MemberId="ngModel" [(ngModel)]="objService.subscriptionData.MemberId" placeholder="member ID" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-calender" aria-hidden="true" [class.green-icon]='objService.subscriptionData.StartDate.valid'
+                    [class.red-icon]="objService.subscriptionData.StartDate.invalid && objService.subscriptionData.StartDate.touched"></i>
+                    <input type="date" name="StartDate" #StartDate="ngModel" [(ngModel)]="objService.subscriptionData.StartDate" placeholder="Start Date" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-calender" aria-hidden="true" [class.green-icon]='objService.subscriptionData.EndDate.valid'
+                    [class.red-icon]="objService.subscriptionData.EndDate.invalid && objService.subscriptionData.EndDate.touched"></i>
+                    <input type="date" name="EndDate" #EndDate="ngModel" [(ngModel)]="objService.subscriptionData.EndDate" placeholder="End Date" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-calender" aria-hidden="true" [class.green-icon]='objService.subscriptionData.SubscriptionType.valid'
+                    [class.red-icon]="objService.subscriptionData.SubscriptionType.invalid && objService.subscriptionData.SubscriptionType.touched"></i>
+                    <input type="text" name="SubscriptionType" #EndDate="ngModel" [(ngModel)]="objService.subscriptionData.SubscriptionType" placeholder="Subscription Type" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-diamond" aria-hidden="true" [class.green-icon]='objService.subscriptionData.AmountPaid.valid'
+                    [class.red-icon]="objService.subscriptionData.AmountPaid.invalid && objService.subscriptionData.AmountPaid.touched"></i>
+                    <input name="AmountPaid" #Amount="ngModel" [(ngModel)]="objService.subscriptionData.AmountPaid" placeholder="Amount Paid" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-success btn-lg text-align=left" type="button" (click)="onSubmit(form)" [disabled]="form.invalid">
+            <i class="fa fa-database"></i> Create </button>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-success btn-lg text-align=right" type="button" (click)="onUpdate(form)" [disabled]="form.invalid">
+            <i class="fa fa-database"></i> Update </button>
+    </div>
+</form>

@@ -1,0 +1,10 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .container {
+        padding: 20px;
+    }
+}
+body {
+    background-color: #16453e;
+  }

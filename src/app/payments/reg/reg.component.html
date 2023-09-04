@@ -1,1 +1,66 @@
-<p>reg works!</p>
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    <!-- <input type="hidden" name="ID" [value]="objService.paymentData.PaymentId"> -->
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-user-circle-o" aria-hidden="true" [class.green-icon]='objService.paymentData.PaymentId.valid'
+                    [class.red-icon]="objService.paymentData.PaymentId.invalid && objService.paymentData.PaymentId.touched"></i>
+                    <input name="PaymentId" #PaymentId="ngModel" [(ngModel)]="objService.paymentData.PaymentId" placeholder="PaymentId" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-diamond" aria-hidden="true" [class.green-icon]='objService.paymentData.MemberId.valid'
+                    [class.red-icon]="objService.paymentData.MemberId.invalid && objService.paymentData.MemberId.touched"></i>
+                    <input name="MemberId" #MemberId="ngModel" [(ngModel)]="objService.paymentData.MemberId" placeholder="MemberId" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-calender" aria-hidden="true" [class.green-icon]='objService.paymentData.PaymentDate.valid'
+                    [class.red-icon]="objService.paymentData.PaymentDate.invalid && objService.paymentData.PaymentDate.touched"></i>
+                    <input type="date" name="PaymentDate" #PaymentDate="ngModel" [(ngModel)]="objService.paymentData.PaymentDate" placeholder="PaymentDate" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-diamond" aria-hidden="true" [class.green-icon]='objService.paymentData.Amount.valid'
+                    [class.red-icon]="objService.paymentData.Amount.invalid && objService.paymentData.Amount.touched"></i>
+                    <input name="Amount" #Amount="ngModel" [(ngModel)]="objService.paymentData.Amount" placeholder="Amount" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-diamond" aria-hidden="true" [class.green-icon]='objService.paymentData.PaymentType.valid'
+                    [class.red-icon]="objService.paymentData.PaymentType.invalid && objService.paymentData.PaymentType.touched"></i>
+                    <input name="PaymentType" #PaymentType="ngModel" [(ngModel)]="objService.paymentData.PaymentType" placeholder="PaymentType" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-success btn-lg text-align=left" type="button" (click)="onSubmit(form)" [disabled]="form.invalid">
+            <i class="fa fa-database"></i> Create </button>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-success btn-lg text-align=right" type="button" (click)="onUpdate(form)" [disabled]="form.invalid">
+            <i class="fa fa-database"></i> Update </button>
+    </div>
+</form>

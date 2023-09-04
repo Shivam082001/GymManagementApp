@@ -1,1 +1,109 @@
-<p>reg works!</p>
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-user-circle-o" aria-hidden="true" [class.green-icon]='objService.trainerData.TrainerId.valid'
+                    [class.red-icon]="objService.trainerData.TrainerId.invalid && objService.trainerData.TrainerId.touched"></i>
+                    <input name="TrainerId" #TrainerId="ngModel" [(ngModel)]="objService.trainerData.TrainerId" placeholder="Trainer ID" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-diamond" aria-hidden="true" [class.green-icon]='objService.trainerData.FirstName.valid'
+                    [class.red-icon]="objService.trainerData.FirstName.invalid && objService.trainerData.FirstName.touched"></i>
+                    <input name="FirstName" #FirstName="ngModel" [(ngModel)]="objService.trainerData.FirstName" placeholder="First Name" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-diamond" aria-hidden="true" [class.green-icon]='objService.trainerData.LastName.valid'
+                    [class.red-icon]="objService.trainerData.LastName.invalid && objService.trainerData.LastName.touched"></i>
+                    <input name="LastName" #LastName="ngModel" [(ngModel)]="objService.trainerData.LastName" placeholder="Last Name" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-calender" aria-hidden="true" [class.green-icon]='objService.trainerData.DateOfBirth.valid'
+                    [class.red-icon]="objService.trainerData.DateOfBirth.invalid && objService.trainerData.DateOfBirth.touched"></i>
+                    <input type="date" name="DateOfBirth" #DateOfBirth="ngModel" [(ngModel)]="objService.trainerData.DateOfBirth" placeholder="Date of Birth" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-diamond" aria-hidden="true" [class.green-icon]='objService.trainerData.Gender.valid'
+                    [class.red-icon]="objService.trainerData.Gender.invalid && objService.trainerData.Gender.touched"></i>
+                    <input name="Gender" #Gender="ngModel" [(ngModel)]="objService.trainerData.Gender" placeholder="Gender" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-diamond" aria-hidden="true" [class.green-icon]='objService.trainerData.ContactNumber.valid'
+                    [class.red-icon]="objService.trainerData.ContactNumber.invalid && objService.trainerData.ContactNumber.touched"></i>
+                    <input name="ContactNumber" #ContactNumber="ngModel" [(ngModel)]="objService.trainerData.ContactNumber" placeholder="Contact Number" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-envelope" aria-hidden="true" [class.green-icon]='objService.trainerData.Email.valid'
+                    [class.red-icon]="objService.trainerData.Email.invalid && objService.trainerData.Email.touched"></i>
+                    <input name="Email" #Email="ngModel" [(ngModel)]="objService.trainerData.Email" placeholder="Email" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-calender" aria-hidden="true" [class.green-icon]='objService.trainerData.HireDate.valid'
+                    [class.red-icon]="objService.trainerData.HireDate.invalid && objService.trainerData.HireDate.touched"></i>
+                    <input type="date" name="HireDate" #HireDate="ngModel" [(ngModel)]="objService.trainerData.HireDate" placeholder="Hire Date" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-diamond" aria-hidden="true" [class.green-icon]='objService.trainerData.Specialization.valid'
+                    [class.red-icon]="objService.trainerData.Specialization.invalid && objService.trainerData.Specialization.touched"></i>
+                    <input name="Specialization" #Specialization="ngModel" [(ngModel)]="objService.trainerData.Specialization" placeholder="Specialization" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-success btn-lg text-align=left" type="button" (click)="onSubmit(form)" [disabled]="form.invalid">
+            <i class="fa fa-database"></i> Create </button>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-success btn-lg text-align=right" type="button" (click)="onUpdate(form)" [disabled]="form.invalid">
+            <i class="fa fa-database"></i> Update </button>
+    </div>
+</form>

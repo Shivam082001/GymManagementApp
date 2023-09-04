@@ -1,1 +1,27 @@
-<p>display works!</p>
+<table class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>Class Id</th>
+            <th>Class Name</th>
+            <th>Description</th>
+            <th>Schedule</th>
+            <th>Trainer Id</th>
+            <th>Max Capacity</th>
+            <th>Attendances</th>
+            <th>Trainer</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let class of classService.listClasses">
+            <td>{{class.ClassId}}</td>
+            <td>{{class.ClassName}}</td>
+            <td>{{class.Description}}</td>
+            <td>{{class.Schedule}}</td>
+            <td>{{class.TrainerId}}</td>
+            <td>{{class.MaxCapacity}}</td>
+            <td>{{class.Attendances}}</td>
+            <td>{{class.Trainer}}</td>  
+        </tr>
+    </tbody>
+</table>

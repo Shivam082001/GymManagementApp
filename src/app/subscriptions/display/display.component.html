@@ -1,1 +1,23 @@
-<p>display works!</p>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Subscription ID </th>
+            <th>Member ID</th>
+           <th> Start Date</th>
+            <th>End Date</th>
+            <th>Subscription Type</th>
+            <th>Amount Paid</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of objs.subscriptionList" >
+            <td>{{p.SubscriptionId }}</td>
+            <td>{{p.MemberId}}</td>
+            <td>{{p.StartDate}}</td>
+                <td>{{p.EndDate}}</td>
+                <td>{{p.SubscriptionType}}</td>
+                <td>{{p.AmountPaid}}</td>
+        
+        </tr>
+    </tbody>
+</table>

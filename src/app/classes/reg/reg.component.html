@@ -1,1 +1,101 @@
-<p>reg works!</p>
+<!-- <p>reg works!</p>
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    <input type="hidden" name="ClassId" [value]="classService.classesData.ClassId">
+    
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-user-circle-o" aria-hidden="true" [class.green-icon]='classService.classesData.ClassId.valid'
+                    [class.red-icon]="classService.classesData.ClassId.invalid && classService.classesData.ClassId.touched"></i>
+                    <input name="ClassId" #ClassId="ngModel" [(ngModel)]="classService.classesData.ClassId" placeholder="Class Id" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-building" aria-hidden="true"></i>
+                    <input name="ClassName" #ClassName="ngModel" [(ngModel)]="classService.classesData.ClassName" placeholder="Class Name" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    <input name="Description" #Description="ngModel" [(ngModel)]="classService.classesData.Description" placeholder="Description" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <input name="Schedule" #Schedule="ngModel" [(ngModel)]="classService.classesData.Schedule" placeholder="Schedule" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-diamond" aria-hidden="true" [class.green-icon]='objService.classesData.#TrainerId.valid'
+                    [class.red-icon]="class.classesData.#TrainerId.invalid && classService.classData.#TrainerId.touched"></i>
+                    <input name="TrainerId" #TrainerId="ngModel" [(ngModel)]="classService.classData.TrainerId" placeholder="Trainer Id" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <input type="number" name="MaxCapacity" #MaxCapacity="ngModel" [(ngModel)]="classService.classesData.MaxCapacity" placeholder="Max Capacity" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <input type="number" name="Attendances" #Attendances="ngModel" [(ngModel)]="classService.classesData.Attendances" placeholder="Attendances" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <input type="number" name="Trainer" #Trainer="ngModel" [(ngModel)]="classService.classesData.Trainer" placeholder="Trainer" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <button class="btn btn-success btn-lg" type="button" (click)="onSubmit(form)" [disabled]="form.invalid">
+            <i class="fa fa-database"></i> Create </button>
+        <button class="btn btn-primary btn-lg" type="button" (click)="onUpdate(form)" [disabled]="form.invalid">
+            <i class="fa fa-database"></i> Update </button>
+    </div>
+</form> -->

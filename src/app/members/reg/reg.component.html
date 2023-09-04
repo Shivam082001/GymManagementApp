@@ -1,1 +1,102 @@
-<p>reg works!</p>
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    <!-- <input type="hidden" name="ID" [value]="objService.attendanceData.AttendanceID"> -->
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-user-circle-o" aria-hidden="true" [class.green-icon]='objService.membersData.MemberId.valid'
+                    [class.red-icon]="objService.membersData.MemberId.invalid && objService.membersData.MemberId.touched"></i>
+                    <input name="MemberId" #MemberId="ngModel" [(ngModel)]="objService.membersData.MemberId" placeholder="Attendance ID" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-diamond" aria-hidden="true" [class.green-icon]='objService.membersData.FirstName.valid'
+                    [class.red-icon]="objService.membersData.FirstName.invalid && objService.membersData.FirstName.touched"></i>
+                    <input name="FirstName" #FirstName="ngModel" [(ngModel)]="objService.membersData.FirstName" placeholder="First Name" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-diamond" aria-hidden="true" [class.green-icon]='objService.membersData.LastName.valid'
+                    [class.red-icon]="objService.membersData.LastName.invalid && objService.membersData.LastName.touched"></i>
+                    <input name="LastName" #LastName="ngModel" [(ngModel)]="objService.membersData.LastName" placeholder="Last Name" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-calender" aria-hidden="true" [class.green-icon]='objService.membersData.DateOfBirth.valid'
+                    [class.red-icon]="objService.membersData.DateOfBirth.invalid && objService.membersData.DateOfBirth.touched"></i>
+                    <input type="date" name="DateOfBirth" #DateOfBirth="ngModel" [(ngModel)]="objService.membersData.DateOfBirth" placeholder="Date of Birth" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-diamond" aria-hidden="true" [class.green-icon]='objService.membersData.Gender.valid'
+                    [class.red-icon]="objService.membersData.Gender.invalid && objService.membersData.Gender.touched"></i>
+                    <input name="Gender" #Gender="ngModel" [(ngModel)]="objService.membersData.Gender" placeholder="Gender" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-diamond" aria-hidden="true" [class.green-icon]='objService.membersData.ContactNumber.valid'
+                    [class.red-icon]="objService.membersData.ContactNumber.invalid && objService.membersData.ContactNumber.touched"></i>
+                    <input name="ContactNumber" #ContactNumber="ngModel" [(ngModel)]="objService.membersData.ContactNumber" placeholder="Contact Number" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-envelope" aria-hidden="true" [class.green-icon]='objService.membersData.Email.valid'
+                    [class.red-icon]="objService.membersData.Email.invalid && objService.membersData.Email.touched"></i>
+                    <input name="Email" #Email="ngModel" [(ngModel)]="objService.membersData.Email" placeholder="Email" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-calender" aria-hidden="true" [class.green-icon]='objService.membersData.JoinDate.valid'
+                    [class.red-icon]="objService.membersData.JoinDate.invalid && objService.membersData.JoinDate.touched"></i>
+                    <input type="date" name="JoinDate" #JoinDate="ngModel" [(ngModel)]="objService.membersData.JoinDate" placeholder="Join Date" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-calender" aria-hidden="true" [class.green-icon]='objService.membersData.Password.valid'
+                    [class.red-icon]="objService.membersData.Password.invalid && objService.membersData.Password.touched"></i>
+                    <input type="password" name="Password" #Password="ngModel" [(ngModel)]="objService.membersData.Password" placeholder="Password" class="form-control" required>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

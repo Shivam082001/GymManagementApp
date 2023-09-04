@@ -1,0 +1,896 @@
+<!-- Banner -->
+<!-- <a href="https://webpixels.io/components?ref=codepen" class="btn w-full btn-primary text-truncate rounded-0 py-2 border-0 position-relative" style="z-index: 1000;">
+    <strong>Crafted with Webpixels CSS:</strong> The design system for Bootstrap 5. Browse all components →
+</a> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('#show').click(function() {
+      $('.menu').toggle("slide");
+    });
+});
+</script>
+
+<body>
+    
+
+<!-- Dashboard -->
+<div class="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
+    <!-- Vertical Navbar -->
+    <nav class="navbar show navbar-vertical h-lg-screen navbar-expand-lg px-0 py-3 navbar-light bg-white border-bottom border-bottom-lg-0 border-end-lg" id="navbarVertical">
+        <div class="container-fluid">
+            <!-- Toggler -->
+            <button class="navbar-toggler ms-n2" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarCollapse" aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Brand -->
+            <a class="navbar-brand py-lg-2 mb-lg-5 px-lg-6 me-0" href="#">
+                <!-- <img src="https://preview.webpixels.io/web/img/logos/clever-primary.svg" alt="..."> -->
+                <h2>Genpact Gym</h2>
+            </a>
+            <!-- User menu (mobile) -->
+            <div class="navbar-user d-lg-none">
+                <!-- Dropdown -->
+                <div class="dropdown">
+                    <!-- Toggle -->
+                    <a href="#" id="sidebarAvatar" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="avatar-parent-child">
+                            <img alt="Image Placeholder" src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80" class="avatar avatar- rounded-circle">
+                            <span class="avatar-child avatar-badge bg-success"></span>
+                        </div>
+                    </a>
+                    <!-- Menu -->
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="sidebarAvatar">
+                        <a href="#" class="dropdown-item">Profile</a>
+                        <a href="#" class="dropdown-item">Settings</a>
+                        <a href="#" class="dropdown-item">Billing</a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">Logout</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="sidebarCollapse">
+                <!-- Navigation -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/attendance">
+                            <i class="bi bi-house"></i> Attendances
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-bar-chart"></i> Analitycs
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-chat"></i> Messages
+                            <span class="badge bg-soft-primary text-primary rounded-pill d-inline-flex align-items-center ms-auto">6</span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-bookmarks"></i> Collections
+                        </a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/members">
+                            <i class="bi bi-people"></i> Users
+                        </a>
+                    </li>
+                </ul>
+                <!-- Divider -->
+                <hr class="navbar-divider my-5 opacity-20">
+                <!-- Navigation -->
+                <ul class="navbar-nav mb-md-4">
+                    <li>
+                        <div class="nav-link text-xs font-semibold text-uppercase text-muted ls-wide" href="#">
+                            Contacts
+                            <span class="badge bg-soft-primary text-primary rounded-pill d-inline-flex align-items-center ms-4">13</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <div class="me-4">
+                                <div class="position-relative d-inline-block text-white">
+                                    <img alt="Image Placeholder" src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-PNG-File.png" class="avatar rounded-circle">
+                                    <span class="position-absolute bottom-2 end-2 transform translate-x-1/2 translate-y-1/2 border-2 border-solid border-current w-3 h-3 bg-success rounded-circle"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="d-block text-sm font-semibold">
+                                    Shivam Sharma
+                                </span>
+                                <span class="d-block text-xs text-muted font-regular">
+                                    Faridabad, HR
+                                </span>
+                            </div>
+                            <div class="ms-auto">
+                                <i class="bi bi-chat"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <div class="me-4">
+                                <div class="position-relative d-inline-block text-white">
+                                    <span class="avatar bg-soft-warning text-warning rounded-circle">JW</span>
+                                    <span class="position-absolute bottom-2 end-2 transform translate-x-1/2 translate-y-1/2 border-2 border-solid border-current w-3 h-3 bg-success rounded-circle"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="d-block text-sm font-semibold">
+                                    Avi Chakravarti
+                                </span>
+                                <span class="d-block text-xs text-muted font-regular">
+                                    Noida, UP
+                                </span>
+                            </div>
+                            <div class="ms-auto">
+                                <i class="bi bi-chat"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <div class="me-4">
+                                <div class="position-relative d-inline-block text-white">
+                                    <img alt="..." src="https://images.unsplash.com/photo-1610899922902-c471ae684eff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80" class="avatar rounded-circle">
+                                    <span class="position-absolute bottom-2 end-2 transform translate-x-1/2 translate-y-1/2 border-2 border-solid border-current w-3 h-3 bg-danger rounded-circle"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="d-block text-sm font-semibold">
+                                    Atharv Gupta
+                                </span>
+                                <span class="d-block text-xs text-muted font-regular">
+                                    Lucknow, UP
+                                </span>
+                            </div>
+                            <div class="ms-auto">
+                                <i class="bi bi-chat"></i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Push content down -->
+                <div class="mt-auto"></div>
+                <!-- User (md) -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/profile">
+                            <i class="bi bi-person-square"></i> Account
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-box-arrow-left"></i> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main content -->
+    <div class="h-screen flex-grow-1 overflow-y-lg-auto">
+        <!-- Header -->
+        <header class="bg-surface-primary border-bottom pt-6">
+            <div class="container-fluid">
+                <div class="mb-npx">
+                    <div class="row align-items-center">
+                        <div class="col-sm-6 col-12 mb-4 mb-sm-0">
+                            <!-- Title -->
+                            <h1 class="h2 mb-0 ls-tight">Welcome Back!</h1>
+                        </div>
+                        <!-- Actions -->
+                        <div class="col-sm-6 col-12 text-sm-end">
+                            <div class="mx-n1">
+                                <!-- <a href="#" class="btn d-inline-flex btn-sm btn-neutral border-base mx-1">
+                                    <span class=" pe-2">
+                                        <i class="bi bi-pencil"></i>
+                                    </span>
+                                    <span>Edit</span>
+                                </a> -->
+                                <div class="dropdown">
+                                    <button class="dropbtn">Register or Update
+                                      <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                      <a href="/attendanceReg">Attendance</a>
+                                      <a href="/classReg">Classes</a>
+                                      <a href="/memberReg">Members</a>
+                                      <a href="/paymentReg">Payment</a>
+                                      <a href="/subscriptionReg">Subscription</a>
+                                      <a href="/trainerReg">Trainer</a>
+                                    </div>
+                                  </div>
+                                  
+                                <!-- <a href="#" class="btn d-inline-flex btn-sm btn-primary mx-1">
+                                    <span class=" pe-2">
+                                        <i class="bi bi-plus"></i>
+                                    </span>
+                                    <span>Create</span>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Nav -->
+                    <ul class="nav nav-tabs mt-4 overflow-x border-0">
+                        <li class="nav-item ">
+                            <a href="/adminDashboard" class="nav-link active">All files</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a href="#" class="nav-link font-regular">Shared</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link font-regular">File requests</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- Main -->
+        <main class="py-6 bg-surface-secondary">
+            <div class="container-fluid">
+                <!-- Card stats -->
+                <div class="row g-6 mb-6">
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card shadow border-0">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <span class="h6 font-semibold text-muted text-sm d-block mb-2">Revenue</span>
+                                        <span class="h3 font-bold mb-0">₹75000.90</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="icon icon-shape bg-tertiary text-white text-lg rounded-circle">
+                                            <i class="bi bi-credit-card"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-2 mb-0 text-sm">
+                                    <span class="badge badge-pill bg-soft-success text-success me-2">
+                                        <i class="bi bi-arrow-up me-1"></i>13%
+                                    </span>
+                                    <span class="text-nowrap text-xs text-muted">Since last month</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card shadow border-0">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <span class="h6 font-semibold text-muted text-sm d-block mb-2">New Members</span>
+                                        <span class="h3 font-bold mb-0">215</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="icon icon-shape bg-primary text-white text-lg rounded-circle">
+                                            <i class="bi bi-people"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-2 mb-0 text-sm">
+                                    <span class="badge badge-pill bg-soft-success text-success me-2">
+                                        <i class="bi bi-arrow-up me-1"></i>30%
+                                    </span>
+                                    <span class="text-nowrap text-xs text-muted">Since last month</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card shadow border-0">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <span class="h6 font-semibold text-muted text-sm d-block mb-2">Total hours</span>
+                                        <span class="h3 font-bold mb-0">1.400</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="icon icon-shape bg-info text-white text-lg rounded-circle">
+                                            <i class="bi bi-clock-history"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-2 mb-0 text-sm">
+                                    <span class="badge badge-pill bg-soft-danger text-danger me-2">
+                                        <i class="bi bi-arrow-down me-1"></i>-5%
+                                    </span>
+                                    <span class="text-nowrap text-xs text-muted">Since last month</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card shadow border-0">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <span class="h6 font-semibold text-muted text-sm d-block mb-2">Work load</span>
+                                        <span class="h3 font-bold mb-0">95%</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="icon icon-shape bg-warning text-white text-lg rounded-circle">
+                                            <i class="bi bi-minecart-loaded"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-2 mb-0 text-sm">
+                                    <span class="badge badge-pill bg-soft-success text-success me-2">
+                                        <i class="bi bi-arrow-up me-1"></i>10%
+                                    </span>
+                                    <span class="text-nowrap text-xs text-muted">Since last month</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- <div class="nav">
+                    <ul>
+                      <li>
+                        <a (click)="selectDiv(1)" [class.active]="selectedDiv === 1">Div 1</a>
+                      </li>
+                      <li>
+                        <a (click)="selectDiv(2)" [class.active]="selectedDiv === 2">Div 2</a>
+                      </li>
+                      <li>
+                        <a (click)="selectDiv(3)" [class.active]="selectedDiv === 3">Div 3</a>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div class="div-container" *ngIf="selectedDiv === 1">
+                    <div class="div-content">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Header 1</th>
+                            <th>Header 2</th>
+                            <th>Header 3</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Data 1</td>
+                            <td>Data 2</td>
+                            <td>Data 3</td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  
+                  <div class="div-container" *ngIf="selectedDiv === 2">
+                    <div class="div-content">
+                      
+                      <h1>Hello!!!!</h1>
+                    </div>
+                  </div>
+                  
+                  <div class="div-container" *ngIf="selectedDiv === 3">
+                    <div class="div-content">
+                      
+                      <h2>World</h2>
+                    </div>
+                  </div> -->
+                  
+                  
+                  
+                  
+
+
+                <div class="card shadow border-0 mb-7">
+                    <div class="card-header">
+                        <!-- <h5 class="mb-0">Display</h5> -->
+                          
+                        <!-- Nav -->
+                    <ul class="nav nav-tabs mt-4 overflow-x border-0">
+                        <li class="nav-item ">
+                            <a href="/adminDashboard#AttendanceTable" class="nav-link active">Attendance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/adminDashboard#ClassTable" class="nav-link font-regular">Classes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/adminDashboard#MemberTable" class="nav-link font-regular">Members</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="/adminDashboard#PaymentTable" class="nav-link font-regular">Payments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/adminDashboard#SubscriptionTable" class="nav-link font-regular">Subscription</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/adminDashboard#TrainerTable" class="nav-link font-regular">Trainers</a>
+                        </li>
+                    </ul>
+                    </div>
+
+                    <div class="table-responsive" id="AttendanceTable">
+                        <br><h3>Attendance Table</h3><br>
+                        <table class="table table-hover table-nowrap">
+                            <thead class="thead-light">
+
+                                
+                                <tr>
+                                    <th>Attendance ID</th>
+                                    <th>Member ID</th>
+                                    <th>Class ID</th>
+                                    <th>Attendance Date</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let p of objA.attendanceList">
+                                    <td>{{p.AttendanceId}}</td>
+                                    <td>{{p.MemberId}}</td>
+                                    <td>{{p.ClassId}}</td>
+                                    <td>{{p.AttendanceDate}}</td>
+                                    <td><button>Delete</button></td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-responsive card-footer border-0 py-5" >
+                        <span class="text-muted text-sm"></span>
+                    </div>
+                    <div>
+                        
+                        <div class="table-responsive" id="ClassTable">
+                            <br><h3>Classes Table</h3><br>
+                            <table class="table table-hover table-nowrap">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Class Id</th>
+                                    <th>Class Name</th>
+                                    <th>Description</th>
+                                    <th>Schedule</th>
+                                    <th>Trainer Id</th>
+                                    <th>Max Capacity</th>
+                                    <th>Attendances</th>
+                                    <th>Trainer</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let class of classService.listClasses">
+                                    <td>{{class.ClassId}}</td>
+                                    <td>{{class.ClassName}}</td>
+                                    <td>{{class.Description}}</td>
+                                    <td>{{class.Schedule}}</td>
+                                    <td>{{class.TrainerId}}</td>
+                                    <td>{{class.MaxCapacity}}</td>
+                                    <td>{{class.Attendances}}</td>
+                                    <td>{{class.Trainer}}</td>  
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                        <div class="table-responsive card-footer border-0 py-5" >
+                            <span class="text-muted text-sm"></span>
+                        </div>
+
+
+                        <!-- (submit)="onDelete(form,obj.MemberId)" -->
+                        <form #form="ngForm" autocomplete="off" >
+                        <div class="table-responsive" id="MemberTable">
+                            <br><h3>Members Table</h3><br>
+                            <table class="table table-hover table-nowrap">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Member ID</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Date Of Birth</th>
+                                    <th>Gender</th>
+                                    <th>Contact Number</th>
+                                    <th>Email</th>
+                                    <th>Join Date</th>
+                                    <th>Password</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let obj of objM.membersList" >
+                                    <td>{{obj.MemberId}}</td>
+                                    <td>{{obj.FirstName}}</td>
+                                    <td>{{obj.LastName}}</td>
+                                    <td>{{obj.DateOfBirth}}</td>
+                                    <td>{{obj.Gender}}</td>
+                                    <td>{{obj.ContactNumber}}</td>
+                                    <td>{{obj.Email}}</td>
+                                    <td>{{obj.JoinDate}}</td>
+                                    <td>{{obj.Password}}</td>
+                                    <td><button class="btn btn-success btn-lg text-align=left" type="button" (click)="onDelete(form,obj.MemberId)" [disabled]="form.invalid">
+                                        <i class="fa fa-database"></i> Delete </button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                        </form>
+
+
+
+
+                        <div class="table-responsive card-footer border-0 py-5" >
+                            <span class="text-muted text-sm"></span>
+                        </div>
+
+                        <div class="table-responsive" id="PaymentTable">
+                            <br><h3>Payment Table</h3><br>
+                            <table class="table table-hover table-nowrap">
+                            <thead>
+                                <tr>
+                                    <th>Payment ID</th>
+                                    <th>Member ID</th>
+                                   <th> Payment Date</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let p of objP.paymentList" >
+                                    <td>{{p.PaymentId}}</td>
+                                    <td>{{p.MemberId}}</td>
+                                    <td>{{p.PaymentDate}}</td>
+                                        <td>{{p.Amount}}</td>
+                                
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                        <div class="table-responsive card-footer border-0 py-5" >
+                            <span class="text-muted text-sm"></span>
+                        </div>
+
+                        <div class="table-responsive" id="SubscriptionTable">
+                            <br><h3>Subscription Table</h3><br>
+                            <table class="table table-hover table-nowrap">
+                            <thead>
+                                <tr>
+                                    <th>Subscription ID </th>
+                                    <th>Member ID</th>
+                                   <th> Start Date</th>
+                                    <th>End Date</th>
+                                    <th>Subscription Type</th>
+                                    <th>Amount Paid</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let p of objS.subscriptionList" >
+                                    <td>{{p.SubscriptionId }}</td>
+                                    <td>{{p.MemberId}}</td>
+                                    <td>{{p.StartDate}}</td>
+                                        <td>{{p.EndDate}}</td>
+                                        <td>{{p.SubscriptionType}}</td>
+                                        <td>{{p.AmountPaid}}</td>
+                                
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                        <div class="table-responsive card-footer border-0 py-5" >
+                            <span class="text-muted text-sm"></span>
+                        </div>
+
+                        <div class="table-responsive" id="TrainerTable">
+                            <br><h3>Trainer Table</h3><br>
+                            <table class="table table-hover table-nowrap">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Trainer Id</th>
+                                    <th>First name</th>
+                                    <th>Last name</th>
+                                    <th>Date of birth</th>
+                                    <th>Gender</th>
+                                    <th>Contact number</th>
+                                    <th>Email</th>
+                                    <th>Hire date</th>
+                                    <th>Specialization</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let trainer of trainerService.listTrainers">
+                                    <td>{{trainer.TrainerId}}</td>
+                                    <td>{{trainer.FirstName}}</td>
+                                    <td>{{trainer.LastName}}</td>
+                                    <td>{{trainer.DateOfBirth}}</td>
+                                    <td>{{trainer.Gender}}</td>
+                                    <td>{{trainer.ContactNumber}}</td>
+                                    <td>{{trainer.Email}}</td>
+                                    <td>{{trainer.HireDate}}</td>
+                                    <td>{{trainer.Specialization}}</td> 
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-responsive card-footer border-0 py-5" >
+                        <span class="text-muted text-sm"></span>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width,
+				initial-scale=1.0">
+	<title>GeeksForGeeks</title>
+	<link rel="stylesheet"
+		href="./admin-dashboard.component.css">
+	
+</head>
+
+<body>
+
+	 for header part 
+	<header>
+
+		<div class="logosec">
+			<div class="logo">Admin Dashboard</div>
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
+				class="icn menuicn"
+				id="menuicn"
+				alt="menu-icon"
+                (click)="toggleNav()"
+                >
+		</div>
+
+		<div class="searchbar">
+			<input type="text"
+				placeholder="Search">
+			<div class="searchbtn">
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
+					class="icn srchicn"
+					alt="search-icon">
+			</div>
+		</div>
+
+		<div class="message">
+			<div class="circle"></div>
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/8.png"
+				class="icn"
+				alt="">
+			<div class="dp">
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+					class="dpicn"
+					alt="dp">
+			</div>
+		</div>
+
+	</header>
+	<div class="main-container">
+		<div class="navcontainer">
+    
+			<nav class="nav">
+                
+				<div class="nav-upper-options">
+					<div class="nav-option option1">
+                        
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png"
+							class="nav-img"
+							alt="dashboard">
+						<h3> Dashboard</h3>
+					</div>
+
+					<div class="option2 nav-option">
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
+							class="nav-img"
+							alt="articles">
+						<h3> Articles</h3>
+					</div>
+
+					<div class="nav-option option3">
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/5.png"
+							class="nav-img"
+							alt="report">
+						<h3> Report</h3>
+					</div>
+
+					<div class="nav-option option4">
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/6.png"
+							class="nav-img"
+							alt="institution">
+						<h3> Institution</h3>
+					</div>
+
+					<div class="nav-option option5">
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183323/10.png"
+							class="nav-img"
+							alt="blog">
+						<h3> Profile</h3>
+					</div>
+
+					<div class="nav-option option6">
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/4.png"
+							class="nav-img"
+							alt="settings">
+						<h3> Settings</h3>
+					</div>
+
+					<div class="nav-option logout">
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
+							class="nav-img"
+							alt="logout">
+						<h3>Logout</h3>
+					</div>
+                </div>
+		
+			</nav>
+		</div>
+		<div class="main">
+
+			<div class="searchbar2">
+				<input type="text"
+					name=""
+					id=""
+					placeholder="Search">
+				<div class="searchbtn">
+				<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
+						class="icn srchicn"
+						alt="search-button">
+				</div>
+			</div>
+
+			<div class="box-container">
+
+				<div class="box box1">
+					<div class="text">
+						<h2 class="topic-heading">60.5k</h2>
+						<h2 class="topic">Article Views</h2>
+					</div>
+
+					<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(31).png"
+						alt="Views">
+				</div>
+
+				<div class="box box2">
+					<div class="text">
+						<h2 class="topic-heading">150</h2>
+						<h2 class="topic">Likes</h2>
+					</div>
+
+					<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210185030/14.png"
+						alt="likes">
+				</div>
+
+				<div class="box box3">
+					<div class="text">
+						<h2 class="topic-heading">320</h2>
+						<h2 class="topic">Comments</h2>
+					</div>
+
+					<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(32).png"
+						alt="comments">
+				</div>
+
+				<div class="box box4">
+					<div class="text">
+						<h2 class="topic-heading">70</h2>
+						<h2 class="topic">Published</h2>
+					</div>
+
+					<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210185029/13.png" alt="published">
+				</div>
+			</div>
+
+			<div class="report-container">
+				<div class="report-header">
+					<h1 class="recent-Articles">Recent Articles</h1>
+					<button class="view">View All</button>
+				</div>
+
+				<div class="report-body">
+					<div class="report-topic-heading">
+						<h3 class="t-op">Article</h3>
+						<h3 class="t-op">Views</h3>
+						<h3 class="t-op">Comments</h3>
+						<h3 class="t-op">Status</h3>
+					</div>
+
+					<div class="items">
+						<div class="item1">
+							<h3 class="t-op-nextlvl">Article 73</h3>
+							<h3 class="t-op-nextlvl">2.9k</h3>
+							<h3 class="t-op-nextlvl">210</h3>
+							<h3 class="t-op-nextlvl label-tag">Published</h3>
+						</div>
+
+						<div class="item1">
+							<h3 class="t-op-nextlvl">Article 72</h3>
+							<h3 class="t-op-nextlvl">1.5k</h3>
+							<h3 class="t-op-nextlvl">360</h3>
+							<h3 class="t-op-nextlvl label-tag">Published</h3>
+						</div>
+
+						<div class="item1">
+							<h3 class="t-op-nextlvl">Article 71</h3>
+							<h3 class="t-op-nextlvl">1.1k</h3>
+							<h3 class="t-op-nextlvl">150</h3>
+							<h3 class="t-op-nextlvl label-tag">Published</h3>
+						</div>
+
+						<div class="item1">
+							<h3 class="t-op-nextlvl">Article 70</h3>
+							<h3 class="t-op-nextlvl">1.2k</h3>
+							<h3 class="t-op-nextlvl">420</h3>
+							<h3 class="t-op-nextlvl label-tag">Published</h3>
+						</div>
+
+						<div class="item1">
+							<h3 class="t-op-nextlvl">Article 69</h3>
+							<h3 class="t-op-nextlvl">2.6k</h3>
+							<h3 class="t-op-nextlvl">190</h3>
+							<h3 class="t-op-nextlvl label-tag">Published</h3>
+						</div>
+
+						<div class="item1">
+							<h3 class="t-op-nextlvl">Article 68</h3>
+							<h3 class="t-op-nextlvl">1.9k</h3>
+							<h3 class="t-op-nextlvl">390</h3>
+							<h3 class="t-op-nextlvl label-tag">Published</h3>
+						</div>
+
+						<div class="item1">
+							<h3 class="t-op-nextlvl">Article 67</h3>
+							<h3 class="t-op-nextlvl">1.2k</h3>
+							<h3 class="t-op-nextlvl">580</h3>
+							<h3 class="t-op-nextlvl label-tag">Published</h3>
+						</div>
+
+						<div class="item1">
+							<h3 class="t-op-nextlvl">Article 66</h3>
+							<h3 class="t-op-nextlvl">3.6k</h3>
+							<h3 class="t-op-nextlvl">160</h3>
+							<h3 class="t-op-nextlvl label-tag">Published</h3>
+						</div>
+
+						<div class="item1">
+							<h3 class="t-op-nextlvl">Article 65</h3>
+							<h3 class="t-op-nextlvl">1.3k</h3>
+							<h3 class="t-op-nextlvl">220</h3>
+							<h3 class="t-op-nextlvl label-tag">Published</h3>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="./index.js"></script>
+</body>
+</html> -->

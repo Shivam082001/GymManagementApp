@@ -1,1 +1,28 @@
-<p>display works!</p>
+<table class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>Trainer Id</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Date of birth</th>
+            <th>Gender</th>
+            <th>Contact number</th>
+            <th>Email</th>
+            <th>Hire date</th>
+            <th>Specialization</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let trainer of trainerService.listTrainers">
+            <td>{{trainer.TrainerId}}</td>
+            <td>{{trainer.FirstName}}</td>
+            <td>{{trainer.LastName}}</td>
+            <td>{{trainer.DateOfBirth}}</td>
+            <td>{{trainer.Gender}}</td>
+            <td>{{trainer.ContactNumber}}</td>
+            <td>{{trainer.Email}}</td>
+            <td>{{trainer.HireDate}}</td>
+            <td>{{trainer.Specialization}}</td> 
+        </tr>
+    </tbody>
+</table>

@@ -1,1 +1,19 @@
-<p>display works!</p>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Payment ID</th>
+            <th>Member ID</th>
+           <th> Payment Date</th>
+            <th>Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of objs.paymentList" >
+            <td>{{p.PaymentId}}</td>
+            <td>{{p.MemberId}}</td>
+            <td>{{p.PaymentDate}}</td>
+                <td>{{p.Amount}}</td>
+        
+        </tr>
+    </tbody>
+</table>
